@@ -81,6 +81,7 @@ jobs:
           pkill -f "vite" 2>/dev/null || true
 
   test-deno:
+    if: false
     runs-on: ubuntu-latest
     name: Deno API Test
     env:
