@@ -105,7 +105,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
         with:
-          version: latest
+          version: v11.7.0
 
       - name: Download Sub-Store Source Code
         env:
