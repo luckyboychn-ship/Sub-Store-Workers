@@ -83,6 +83,7 @@ jobs:
 
   test-deno:
     if: false
+    # 跳过demo测试
     runs-on: ubuntu-latest
     name: Deno API Test
     env:
@@ -158,6 +159,7 @@ jobs:
 
       #- name: Run API tests
       #  run: node scripts/test-dashboard.js http://localhost:8000
+      #  关闭API测试
 
       - name: Stop Deno server
         if: always()
