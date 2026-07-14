@@ -73,6 +73,7 @@ jobs:
 
       #- name: Run API tests
       #  run: node scripts/test-dashboard.js http://localhost:3000
+      #  关闭API测试
 
       - name: Stop dev server
         if: always()
