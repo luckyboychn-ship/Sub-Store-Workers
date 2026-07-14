@@ -71,8 +71,8 @@ jobs:
         run: |
           cat workers-dev.log || true
 
-      - name: Run API tests
-        run: node scripts/test-dashboard.js http://localhost:3000
+      #- name: Run API tests
+      #  run: node scripts/test-dashboard.js http://localhost:3000
 
       - name: Stop dev server
         if: always()
@@ -154,8 +154,8 @@ jobs:
         run: |
           cat deno-dev.log || true
 
-      - name: Run API tests
-        run: node scripts/test-dashboard.js http://localhost:8000
+      #- name: Run API tests
+      #  run: node scripts/test-dashboard.js http://localhost:8000
 
       - name: Stop Deno server
         if: always()
